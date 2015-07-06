@@ -23,12 +23,13 @@ public class PartFour {
         double billAmount = in.nextDouble();
 
         System.out.println("Please enter the tip percentage: ");
-        int tipPercent = in.nextInt();
+        double tipPercent = in.nextDouble();
 
         double tipAmount = billAmount * tipPercent * 0.01;
         double totalAmount = billAmount + tipAmount;
 
-        System.out.println("Tip amount: "+tipAmount);
-        System.out.println("Total amount: "+totalAmount);
+        System.out.format("Tip amount: $" + "%.2f", tipAmount);
+        System.out.println();
+        System.out.format("Total amount: $" + "%.2f", totalAmount);
     }
 }
