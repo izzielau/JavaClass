@@ -17,8 +17,8 @@ public class PartTwo {
         int lengthOfPhrase = phrase.length();
         int occurrences = 0;
 
-        for (int i = lengthOfPhrase; i > 0; i--) {
-            if (phrase.charAt(i - 1) == 'y') {
+        for (int i = 0; i <= lengthOfPhrase - 1; i++) {
+            if (phrase.charAt(i) == 'y') {
                 occurrences++;
             }
         }
